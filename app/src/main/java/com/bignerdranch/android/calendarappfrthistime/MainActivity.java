@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bignerdranch.android.calendarappfrthistime.Weekly;
+
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.O
         button_text =((Button)View).getText().toString();
         if(button_text.equals("click second activity"))
         {
-            Intent ganesh = new Intent(this,Weekly.class);
+            Intent ganesh = new Intent(this, Weekly.class);
             startActivity(ganesh);
         }
         //else if (button_text.equals("click third activity"))
@@ -138,6 +139,12 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.O
             String message = " Selected Date" + dayText +""+monthYearFromDate(selectedDate);
             Toast.makeText(this, message,Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void weeklyAction(View view){
+
+        startActivity(new Intent(this, Weekly.class));
+
     }
 
 

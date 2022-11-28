@@ -148,7 +148,7 @@ class EventFragment : Fragment(), DatePickerFragment.Callbacks{
     }
 
     override fun onDateSelected(date: Date) {
-
+        //bruh idk
     }
 
 
